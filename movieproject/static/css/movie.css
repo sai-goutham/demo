@@ -1,0 +1,19 @@
+td,table{
+  border-collapse: collapse;
+   margin: 25px 0;
+   font-size: 0.9em;
+   font-family: sans-serif;
+   min-width: 90px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 15px;
+    margin-top: 100px;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bW92aWVzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

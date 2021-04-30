@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+      <link rel="stylesheet" href="{% static 'css/movie.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container" align='center'>
+      <div class="jumbotron">
+        <h1>This is sample Movies</h1>
+        {% if movie_list %}
+        <table>
+          <thead>
+            <th>Release Date</th>
+            <th>Movie name</th>
+            <th>hero</th>
+            <th>herione</th>
+            <th>rating</th>
+          </thead>
+          {% for movie in movie_list %}
+          <tr>
+            <td>{{movie.rdate}}</td>
+            <td>{{movie.name}}</td>
+            <td>{{movie.hero}}</td>
+            <td>{{movie.herione}}</td>
+            <td>{{movie.rating}}</td>
+          </tr>
+          {% endfor %}
+        </table>
+{% else %}
+<p>no record</p>
+{% endif %}
+
+      </div>
+</div>
+  </body>
+</html>
